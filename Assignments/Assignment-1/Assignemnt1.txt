@@ -1,0 +1,3 @@
+1- Design the Sample screen in React Native.
+
+2- Choose a CV layout and create your CV according to that layout in React Native.
