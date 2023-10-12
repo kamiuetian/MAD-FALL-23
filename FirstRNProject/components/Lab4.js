@@ -1,38 +1,24 @@
 import React from "react";
-import { View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import styles from "./styles";
+import MyRedText from "./MyRedText";
 function Lab4(props) {
   return (
-    <View
-      style={{
-        flex: 1,
-        maxHeight: 1000,
-        flexWrap: "wrap",
-        alignContent: "flex-start",
-        flexDirection: "column",
-        backgroundColor: "yellow",
-      }}
-    >
+    <View style={styles.view1}>
+      <View style={{ ...styles.view2, ...{ backgroundColor: "grey" } }}></View>{" "}
+      {/**red */}
       <View
-        style={{
-          width: 50,
-          flexGrow: 1,
-          flexBasis: 50,
-          backgroundColor: "red",
-        }}
-      ></View>
-      <View
-        style={{
-          width: "50%",
-          flexGrow: 2,
-          height: 50,
-          backgroundColor: "green",
-        }}
-      ></View>
-      <View style={{ width: 50, height: 50, backgroundColor: "blue" }}></View>
+        style={[{ width: 100, backgroundColor: "blue" }, styles.view2]}
+      ></View>{" "}
+      {/**gree */}
+      <View style={styles.view2}></View>
+      {/**blue */}
+      <MyRedText>This is red text</MyRedText>
+      <MyRedText style={{ fontWeight: "bold" }}>
+        This is red and boldtext
+      </MyRedText>
     </View>
   );
 }
-const styles=StyleSheet.create({
-  
-})
+
 export default Lab4;
