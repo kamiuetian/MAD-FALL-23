@@ -11,6 +11,7 @@ Explore the following effects.
 2- different accurancy level of location.
 
 3- use of gecode and reversegecode functions in location Package.
+4- Explore different option that you can pass to function when requesting permissions
 
 ## Task 2
 
