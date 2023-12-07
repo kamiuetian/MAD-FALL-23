@@ -1,6 +1,6 @@
 //import React, { useState } from "react";
 //import { Text, TextInput, View, Button } from "react-native";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+/*import AsyncStorage from "@react-native-async-storage/async-storage";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React, { useState, useEffect } from "react";
@@ -191,3 +191,18 @@ const styles = StyleSheet.create({
   console.log(props);
   return <Text>Welcome User {props.name}</Text>;
 }*/
+
+import React from "react";
+import MyState from "./Context/MyAppstate";
+import MyContextUser from "./components/MyContextUser";
+function App(props) {
+  return (
+    <>
+      <MyState>
+        <MyContextUser />
+      </MyState>
+    </>
+  );
+}
+
+export default App;
