@@ -195,12 +195,11 @@ const styles = StyleSheet.create({
 import React from "react";
 import MyState from "./Context/MyAppstate";
 import MyContextUser from "./components/MyContextUser";
+import AxiosComponent from "./components/AxiosComponent";
 function App(props) {
   return (
     <>
-      <MyState>
-        <MyContextUser />
-      </MyState>
+      <AxiosComponent />
     </>
   );
 }
